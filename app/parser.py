@@ -1,7 +1,8 @@
 import re
+from typing import List, Tuple
 
-#Parses requirements.txt content and extracts (package, version)
-def parse_requirements(content: str) -> list[tuple[str, str]]:
+#Parses requirements.txt content and extracts (package, version)import re
+def parse_requirements(content: str) -> List[Tuple[str, str]]:
     pattern = re.compile(r"^([\w\-]+)==([\d\.]+)$")
     lines = content.strip().splitlines()
     deps = []
