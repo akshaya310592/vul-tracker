@@ -1,4 +1,4 @@
-aaaaaaaaaaa2# 🛡️ Vul-Tracker: Python Dependency Vulnerability Tracker
+🛡️ Vul-Tracker: Python Dependency Vulnerability Tracker
 
 **Objective:**  
 Develop a Python application using **FastAPI** that allows users to track vulnerabilities in their Python applications' dependencies. This project serves as a demonstration of backend development skills, RESTful API design, and performance optimization.
