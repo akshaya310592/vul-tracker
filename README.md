@@ -58,17 +58,18 @@ Develop a Python application using **FastAPI** that allows users to track vulner
   ```bash
   python -m venv venv
   source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
 3.**Install dependencies**
   ```bash
   pip install -r requirements.txt
+```
 
 4.**Run the FAST API**
   ```bash
   uvicorn main:app --reload
-
+```
 **Project Structure**
-  ```bash
   vul-tracker/
   ├── main.py                 # FastAPI application entry point
   ├── models.py               # Pydantic models
