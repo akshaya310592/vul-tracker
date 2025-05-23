@@ -54,24 +54,28 @@ Develop a Python application using **FastAPI** that allows users to track vulner
    git clone https://github.com/your-username/vul-tracker.git
    cd vul-tracker
    
-## Create Virtual Environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+2.**Create Virtual Environment**
+  ```bash
+  python -m venv venv
+  source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-## Install dependencies
-pip install -r requirements.txt
+3.**Install dependencies**
+  ```bash
+  pip install -r requirements.txt
 
-## Run the FAST API
-uvicorn main:app --reload
+4.**Run the FAST API**
+  ```bash
+  uvicorn main:app --reload
 
-## Project Structure
-vul-tracker/
-├── main.py                 # FastAPI application entry point
-├── models.py               # Pydantic models
-├── services/               # Business logic (e.g., OSV API integration)
-├── storage.py              # In-memory data management
-├── requirements.txt
-└── README.md
+**Project Structure**
+  ```bash
+  vul-tracker/
+  ├── main.py                 # FastAPI application entry point
+  ├── models.py               # Pydantic models
+  ├── services/               # Business logic (e.g., OSV API integration)
+  ├── storage.py              # In-memory data management
+  ├── requirements.txt
+  └── README.md
 
 
 
