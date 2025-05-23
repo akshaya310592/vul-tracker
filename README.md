@@ -51,7 +51,7 @@ Develop a Python application using **FastAPI** that allows users to track vulner
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/vul-tracker.git
+   git clone https://github.com/310592/vul-tracker.git
    cd vul-tracker
    
 2.**Create Virtual Environment**
