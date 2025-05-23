@@ -1,9 +1,10 @@
 from pydantic import BaseModel
+from typing import List, Optional
 
 class DependencyInfo(BaseModel):
     name: str
     version: str
-    vulnerabilities: list[dict] | None = []
+    vulnerabilities: Optional[List[dict]] = []
 
 class ApplicationCreate(BaseModel):
     name: str
@@ -11,6 +12,10 @@ class ApplicationCreate(BaseModel):
 
 class Application(ApplicationCreate):
     id: str
-    dependencies: list[DependencyInfo]
+    dependencies: List[DependencyInfo]
 
-class DependencyDet
+class DependencyDetails(BaseModel):
+    name: str
+    version: str
+    used_in: List[str]
+    vulnerabilities: Optional[List[dict]] = []
